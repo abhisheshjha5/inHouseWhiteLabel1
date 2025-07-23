@@ -18,13 +18,8 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -58,25 +53,25 @@
               "namedChunks": true
             },
             "client1": {
-  "baseHref": "/client1/",
-  "outputPath": "dist/client1",
-  "fileReplacements": [
-    {
-      "replace": "src/environments/environment.ts",
-      "with": "src/environments/environment.client1.ts"
-    }
-  ]
-},
-         "client2": {
-  "baseHref": "/client2/",
-  "outputPath": "dist/client2",
-  "fileReplacements": [
-    {
-      "replace": "src/environments/environment.ts",
-      "with": "src/environments/environment.client2.ts"
-    }
-  ]
-}
+              "baseHref": "/client1/",
+              "outputPath": "dist/client1",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.client1.ts"
+                }
+              ]
+            },
+            "client2": {
+              "baseHref": "/client2/",
+              "outputPath": "dist/client2",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.client2.ts"
+                }
+              ]
+            }
           },
           "defaultConfiguration": "production"
         },
@@ -111,13 +106,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         }

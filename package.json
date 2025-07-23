@@ -5,8 +5,9 @@
   "ng": "ng",
   "start": "ng serve",
   "build": "ng build",
-  "build:client1": "ng build --configuration=client1 --output-path=dist/client1",
-  "build:client2": "ng build --configuration=client2 --output-path=dist/client2"
+   "build:client1": "ng build --configuration client1 --base-href /inHouseWhiteLabel1/client1/ --output-path=dist/client1",
+  "build:client2": "ng build --configuration client2 --base-href /inHouseWhiteLabel1/client2/ --output-path=dist/client2"
+
 }
 ,
   "private": true,
