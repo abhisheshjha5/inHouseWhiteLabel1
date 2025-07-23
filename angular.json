@@ -56,7 +56,27 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
-            }
+            },
+            "client1": {
+  "baseHref": "/client1/",
+  "outputPath": "dist/client1",
+  "fileReplacements": [
+    {
+      "replace": "src/environments/environment.ts",
+      "with": "src/environments/environment.client1.ts"
+    }
+  ]
+},
+         "client2": {
+  "baseHref": "/client2/",
+  "outputPath": "dist/client2",
+  "fileReplacements": [
+    {
+      "replace": "src/environments/environment.ts",
+      "with": "src/environments/environment.client2.ts"
+    }
+  ]
+}
           },
           "defaultConfiguration": "production"
         },
@@ -68,6 +88,12 @@
             },
             "development": {
               "browserTarget": "angular14-pms-demo:build:development"
+            },
+            "client1": {
+              "browserTarget": "angular14-pms-demo:build:client1"
+            },
+            "client2": {
+              "browserTarget": "angular14-pms-demo:build:client2"
             }
           },
           "defaultConfiguration": "development"
@@ -97,5 +123,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
